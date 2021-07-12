@@ -12,10 +12,10 @@ namespace ConexionSQL_WinUI3
     {
         string connectionString = "Data Source=DESKTOP-R56EJQK\\SQLEXPRESS;Initial Catalog=GraphPriceOne;Integrated Security=SSPI;";
         public SqlConnection connection = new SqlConnection();
-
         public MainWindow()
         {
             InitializeComponent();
+            txtStatus.Text = connection.State.ToString();
         }
 
         public void Conectar(object sender, RoutedEventArgs e)
