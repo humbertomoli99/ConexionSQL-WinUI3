@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "ConexionSQL-WinUI3 (Package)", "ConexionSQL-WinUI3 (Package)\ConexionSQL-WinUI3 (Package).wapproj", "{5A422FB1-50CD-4D2E-997D-63315DC83BD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConexionSQL-WinUI3", "ConexionSQL-WinUI3\ConexionSQL-WinUI3.csproj", "{451821F3-0F2B-4226-B81A-F0E43C90C7E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|arm64.ActiveCfg = Debug|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|arm64.Build.0 = Debug|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|arm64.Deploy.0 = Debug|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x64.ActiveCfg = Debug|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x64.Build.0 = Debug|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x64.Deploy.0 = Debug|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x86.ActiveCfg = Debug|x86
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x86.Build.0 = Debug|x86
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Debug|x86.Deploy.0 = Debug|x86
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|arm64.ActiveCfg = Release|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|arm64.Build.0 = Release|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|arm64.Deploy.0 = Release|arm64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x64.ActiveCfg = Release|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x64.Build.0 = Release|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x64.Deploy.0 = Release|x64
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x86.ActiveCfg = Release|x86
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x86.Build.0 = Release|x86
+		{5A422FB1-50CD-4D2E-997D-63315DC83BD7}.Release|x86.Deploy.0 = Release|x86
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|arm64.ActiveCfg = Debug|arm64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|arm64.Build.0 = Debug|arm64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|x64.ActiveCfg = Debug|x64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|x64.Build.0 = Debug|x64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|x86.ActiveCfg = Debug|x86
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Debug|x86.Build.0 = Debug|x86
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|arm64.ActiveCfg = Release|arm64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|arm64.Build.0 = Release|arm64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|x64.ActiveCfg = Release|x64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|x64.Build.0 = Release|x64
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|x86.ActiveCfg = Release|x86
+		{451821F3-0F2B-4226-B81A-F0E43C90C7E0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5233D4B0-AE1C-47C1-9C4C-6D8B9AB069C8}
+	EndGlobalSection
+EndGlobal
