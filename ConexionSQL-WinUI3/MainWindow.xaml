@@ -21,5 +21,5 @@
         <Button Grid.Row="0" Grid.Column="1" x:Name="btnDesconectar" Margin="0,0,0,0" Click="Desconectar" HorizontalAlignment="Right">Cerrar conexion</Button>
         <TextBlock Grid.Row="2" Grid.Column="0">Status:</TextBlock>
         <TextBlock Grid.Row="3" Grid.Column="1" Name="txtStatus"></TextBlock>
-        </Grid>
+    </Grid>
 </Window>
