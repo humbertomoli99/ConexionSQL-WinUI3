@@ -51,7 +51,7 @@ namespace ConexionSQL_WinUI3
         {
             try
             {
-                if (TxtName.Text != "" && TxtUrl.Text != "")
+                if (TxtName.Text == "" || TxtUrl.Text == "")
                 {
                     txtStatus.Text = "Porfavor ingrese los datos";
                 }else if (connection.State == System.Data.ConnectionState.Closed)
