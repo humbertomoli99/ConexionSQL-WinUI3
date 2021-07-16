@@ -1,4 +1,5 @@
 ﻿using Microsoft.UI.Xaml;
+using System;
 using System.Data.SqlClient;
 
 namespace ConexionSQL_WinUI3
@@ -60,8 +61,9 @@ namespace ConexionSQL_WinUI3
                 }
                 else
                 {
+                    string Date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     string insertArticle = "insert into TProducts(ProductName,ProductURL,UnitPriceTag,UnitPriceDesc,UnitPriceDescPorc,ProductTimePrice,ShippingPrice,StoreName,UnitsInStock)" +
-                        "values ('" + TxtName.Text + "','" + TxtUrl.Text + "',100,100,100,'2021-07-12',123,NULL,1)";
+                        "values ('" + TxtName.Text + "','" + TxtUrl.Text + "',100,100,100,'" + Date +  "',123,NULL,1)";
                     SqlCommand comando = new SqlCommand(insertArticle, connection);
                     comando.ExecuteNonQuery();
                     //connection.Close();
