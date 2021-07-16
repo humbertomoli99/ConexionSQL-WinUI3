@@ -10,11 +10,13 @@ namespace ConexionSQL_WinUI3
     /// 
     public sealed partial class MainWindow : Window
     {
+        //string de conexion cambiarla con el nombre de tu computador
         string connectionString = "Data Source=DESKTOP-R56EJQK\\SQLEXPRESS;Initial Catalog=GraphPriceOne;Integrated Security=SSPI;";
         public SqlConnection connection = new SqlConnection();
         public MainWindow()
         {
             InitializeComponent();
+            //mostrando status de conexion al iniciar la aplicacion
             txtStatus.Text = connection.State.ToString();
         }
 
@@ -27,6 +29,7 @@ namespace ConexionSQL_WinUI3
                     connection.ConnectionString = connectionString;
                     connection.Open();
                     txtStatus.Text = connection.State.ToString();
+                    //falta una consulta para obtener los datos y form para mostrar el ultimo dato agregado
                     //Crea una consulta de la tabla productos y retorna los product name
                     /*
                     SqlCommand consulta = new SqlCommand("Select * From TProducts where ProductID = 1", connection);
@@ -44,11 +47,6 @@ namespace ConexionSQL_WinUI3
             {
                 txtStatus.Text = ex.ToString();
             }
-        }
-        private void Desconectar(object sender, RoutedEventArgs e)
-        {
-            connection.Close();
-            txtStatus.Text = connection.State.ToString();
         }
         public void Insertar(object sender, RoutedEventArgs e)
         {
@@ -68,6 +66,11 @@ namespace ConexionSQL_WinUI3
             {
                 txtStatus.Text = ex.ToString();
             }
+        }
+        private void Desconectar(object sender, RoutedEventArgs e)
+        {
+            connection.Close();
+            txtStatus.Text = connection.State.ToString();
         }
     }
 }
