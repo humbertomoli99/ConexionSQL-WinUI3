@@ -51,18 +51,21 @@ namespace ConexionSQL_WinUI3
         {
             try
             {
-                if (TxtName.Text != "" && TxtUrl.Text != "" && connection.State == System.Data.ConnectionState.Open)
+                if (TxtName.Text != "" && TxtUrl.Text != "")
+                {
+                    txtStatus.Text = "Porfavor ingrese los datos";
+                }else if (connection.State == System.Data.ConnectionState.Closed)
+                {
+                    txtStatus.Text = "Porfavor abra la conexion";
+                }
+                else
                 {
                     string insertArticle = "insert into TProducts(ProductName,ProductURL,UnitPriceTag,UnitPriceDesc,UnitPriceDescPorc,ProductTimePrice,ShippingPrice,StoreName,UnitsInStock)" +
-                                    "values ('" + TxtName.Text + "','" + TxtUrl.Text + "',100,100,100,'2021-07-12',123,NULL,1)";
+                        "values ('" + TxtName.Text + "','" + TxtUrl.Text + "',100,100,100,'2021-07-12',123,NULL,1)";
                     SqlCommand comando = new SqlCommand(insertArticle, connection);
                     comando.ExecuteNonQuery();
                     //connection.Close();
                     txtStatus.Text = "Ok";
-                }
-                else
-                {
-                    txtStatus.Text = "Porfavor abra la conexion";
                 }
             }
             catch (SqlException ex)
